@@ -8,7 +8,7 @@ form.addEventListener("submit", function(e){
     alert("Login Successful!");
     form.reset();
     // Redirect to Home Page
-    window.location.href = "home.html";
+    window.location.href = "./HTML/home.html";
 });
 
 
