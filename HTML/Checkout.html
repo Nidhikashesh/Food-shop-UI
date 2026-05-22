@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swaad Checkout</title>
+
+  <link rel="stylesheet" href="/CSS/Checkout.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      Swaad
+    </div>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    
+  </header>
+
+  <!-- Checkout -->
+
+  <section class="checkout-section">
+
+    <div class="checkout-header">
+      <h1>Checkout</h1>
+      <p>Complete your order securely</p>
+    </div>
+
+    <div class="checkout-grid">
+
+      <!-- Left -->
+
+      <div class="left-side">
+
+        <!-- Delivery Address -->
+
+        <div class="checkout-card glass">
+
+          <div class="card-title">
+            <i data-feather="map-pin"></i>
+            <h2>Delivery Address</h2>
+          </div>
+
+          <div class="form-grid">
+
+            <input type="text" placeholder="Full Name"/>
+            <input type="text" placeholder="Phone Number"/>
+
+            <input type="email" placeholder="Email Address"/>
+            <input type="text" placeholder="City"/>
+
+            <textarea placeholder="Full Address"></textarea>
+
+          </div>
+
+        </div>
+
+        <!-- Payment Method -->
+
+        <div class="checkout-card glass">
+
+          <div class="card-title">
+            <i data-feather="credit-card"></i>
+            <h2>Payment Method</h2>
+          </div>
+
+          <div class="payment-methods">
+
+            <div class="payment-card active">
+              <i data-feather="credit-card"></i>
+              <span>Credit Card</span>
+            </div>
+
+            <div class="payment-card">
+              <i data-feather="smartphone"></i>
+              <span>UPI Payment</span>
+            </div>
+
+            <div class="payment-card">
+              <i data-feather="dollar-sign"></i>
+              <span>Cash On Delivery</span>
+            </div>
+
+          </div>
+
+          <div class="card-details">
+
+            <input type="text" placeholder="Card Holder Name"/>
+            <input type="text" placeholder="Card Number"/>
+
+            <div class="card-row">
+              <input type="text" placeholder="MM/YY"/>
+              <input type="text" placeholder="CVV"/>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+
+      <div class="right-side">
+
+        <!-- Order Summary -->
+
+        <div class="summary-card glass">
+
+          <div class="summary-header">
+            <h2>Order Summary</h2>
+          </div>
+
+          <div class="order-item">
+
+            <img
+              src="/Images/dal tadka.webp"
+              alt=""
+            />
+
+            <div>
+              <h3>Dal Tadka</h3>
+              <p>Qty : 1</p>
+            </div>
+
+            <span>₹329</span>
+
+          </div>
+
+          <div class="order-item">
+
+            <img
+              src="/Images/fried rice.webp"
+              alt=""
+            />
+
+            <div>
+              <h3>Fried Rice</h3>
+              <p>Qty : 2</p>
+            </div>
+
+            <span>₹998</span>
+
+          </div>
+
+          <div class="price-box">
+
+            <div class="price-row">
+              <span>Subtotal</span>
+              <span>₹1327</span>
+            </div>
+
+            <div class="price-row">
+              <span>Delivery</span>
+              <span class="green">FREE</span>
+            </div>
+
+            <div class="price-row">
+              <span>Taxes</span>
+              <span>₹120</span>
+            </div>
+
+            <div class="price-row total">
+              <span>Total</span>
+              <span>₹1447</span>
+            </div>
+
+          </div>
+
+          <button class="place-order-btn">
+            Place Order
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Success Popup -->
+
+  <div class="success-popup" id="successPopup">
+
+    <div class="popup-content glass">
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+      <h2>Order Placed Successfully</h2>
+
+      <p>
+        Your delicious food is on the way 🚚
+      </p>
+
+      <button id="closePopup">
+        Continue
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="/JS/Checkout.js"></script>
+
+</body>
+</html>

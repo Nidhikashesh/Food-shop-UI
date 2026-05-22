@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Swaad Food Details</title>
+
+  <link rel="stylesheet" href="/CSS/FoodDetails.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      Swaad
+    </div>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="Checkout.html"><button class="nav-btn">
+      Checkout
+    </button></a>
+
+  </header>
+
+  <!-- Food Details -->
+
+  <section class="food-details">
+
+    <div class="food-grid">
+
+      <!-- Left Image -->
+
+      <div class="food-image-section glass">
+
+        <img
+          src="/Images/dal tadka.webp"
+          alt=""
+          class="main-food-img"
+        />
+
+        <div class="small-images">
+
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Right Content -->
+
+      <div class="food-content glass">
+
+        <span class="food-tag">
+          Best Seller
+        </span>
+
+        <h1>Food Name</h1>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+          <span>(4.9 Reviews)</span>
+        </div>
+
+        <h2 class="price">
+          ₹329
+        </h2>
+
+        <!-- Description -->
+
+        <div class="content-box">
+
+          <h3>Description</h3>
+
+          <p>
+            Delicious yellow lentils slow cooked with butter,
+            garlic, Indian spices and fresh herbs.
+            Served hot with rice or naan for the perfect meal experience.
+          </p>
+
+        </div>
+
+        <!-- Ingredients -->
+
+        <div class="content-box">
+
+          <h3>Ingredients</h3>
+
+          <div class="ingredients">
+
+            <span>Butter</span>
+            <span>Garlic</span>
+            <span>Lentils</span>
+            <span>Tomato</span>
+            <span>Fresh Herbs</span>
+            <span>Indian Spices</span>
+
+          </div>
+
+        </div>
+
+        <!-- Quantity -->
+
+        <div class="quantity-section">
+
+          <h3>Quantity</h3>
+
+          <div class="quantity-box">
+
+            <button class="minus">-</button>
+
+            <span id="quantity">
+              1
+            </span>
+
+            <button class="plus">+</button>
+
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="action-buttons">
+
+          <button class="cart-btn">
+            Add To Cart
+          </button>
+
+          <button class="buy-btn">
+            Buy Now
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Reviews -->
+
+  <section class="reviews-section">
+
+    <div class="reviews-header">
+      <h2>Customer Reviews</h2>
+      <p>What our customers say about this food</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Review -->
+
+      <div class="review-card glass">
+
+        <div class="review-top">
+
+          <img
+            src="https://i.pravatar.cc/100?img=12"
+            alt=""
+          />
+
+          <div>
+            <h3>Rahul Sharma</h3>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+
+        </div>
+
+        <p>
+          Amazing taste and perfect spices.
+          One of the best Dal Tadka I ever had.
+        </p>
+
+      </div>
+
+      <!-- Review -->
+
+      <div class="review-card glass">
+
+        <div class="review-top">
+
+          <img
+            src="https://i.pravatar.cc/100?img=24"
+            alt=""
+          />
+
+          <div>
+            <h3>Anjali Verma</h3>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+
+        </div>
+
+        <p>
+          Fresh ingredients and fast delivery.
+          Highly recommended food.
+        </p>
+
+      </div>
+
+      <!-- Review -->
+
+      <div class="review-card glass">
+
+        <div class="review-top">
+
+          <img
+            src="https://i.pravatar.cc/100?img=36"
+            alt=""
+          />
+
+          <div>
+            <h3>Rohit Singh</h3>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+
+        </div>
+
+        <p>
+          Smooth texture and authentic Indian flavor.
+          Loved it so much.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Popup -->
+
+  <div class="popup" id="popup">
+
+    <div class="popup-content glass">
+
+      <div class="popup-icon">
+        ✓
+      </div>
+
+      <h2>Added To Cart</h2>
+
+      <p>
+        Your item has been added successfully.
+      </p>
+
+      <button id="closePopup">
+        Continue Shopping
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="/JS/FoodDetails.js"></script>
+
+</body>
+</html>

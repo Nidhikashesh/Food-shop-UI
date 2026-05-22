@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swaad Cart</title>
+
+  <link rel="stylesheet" href="/CSS/Cart.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    Free Delivery On Orders Above ₹499
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Swaad</div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cart.html">Your Cart</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <a href="Checkout.html"><button class="book-btn">Checkout</button></a>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+
+    <div class="cart-header">
+      <h1>Your Cart</h1>
+      <p>Review your delicious order before checkout.</p>
+    </div>
+
+    <!-- Cart Item -->
+    <div class="cart-item glass">
+
+      <img src="/Images/dal tadka.webp" alt="">
+
+      <div class="item-details">
+        <span class="price">₹329 only</span>
+        <h2>Dal Tadka</h2>
+        <p>Yellow lentils slow cooked with butter & spices.</p>
+
+        <div class="quantity-box">
+          <button class="minus">-</button>
+          <span>1</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+      </button></a>
+      <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Cart Item -->
+    <div class="cart-item glass">
+
+      <img src="/Images/fried rice.webp" alt="">
+
+      <div class="item-details">
+        <span class="price">₹1111 only</span>
+        <h2>Fried Rice</h2>
+        <p>Fluffy rice tossed with vegetables & herbs.</p>
+
+        <div class="quantity-box">
+          <button class="minus">-</button>
+          <span>1</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+      </button></a>
+      <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Total Card -->
+    <div class="total-card glass">
+
+      <div class="brand-logo">
+        <h2>SWAAD</h2>
+        <p>FOOD RESTAURANT</p>
+      </div>
+
+      <div class="bill-box">
+        <h3>Grand Total</h3>
+
+        <div class="bill-row">
+          <span>Dal Tadka</span>
+          <span>₹329</span>
+        </div>
+
+        <div class="bill-row">
+          <span>Fried Rice</span>
+          <span>₹1111</span>
+        </div>
+
+        <div class="bill-row">
+          <span>Delivery Charge</span>
+          <span class="green">FREE</span>
+        </div>
+
+        <div class="bill-row total">
+          <span>Total Amount</span>
+          <span>₹1440</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+
+      <div class="feature glass">
+        <div class="icon">🚚</div>
+        <h4>Free Delivery</h4>
+        <p>Fast & secure delivery service.</p>
+      </div>
+
+      <div class="feature glass">
+        <div class="icon">🥗</div>
+        <h4>Fresh Ingredients</h4>
+        <p>Healthy & hygienic food.</p>
+      </div>
+
+      <div class="feature glass">
+        <div class="icon">💳</div>
+        <h4>Easy Payment</h4>
+        <p>100% secure online payments.</p>
+      </div>
+
+      <div class="feature glass">
+        <div class="icon">⭐</div>
+        <h4>Best Quality</h4>
+        <p>Delicious food with love.</p>
+      </div>
+
+    </div>
+
+    <a href="Menu.html">
+      <button class="checkout-btn">
+        Continue Shopping
+      </button>
+    </a>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div class="footer-box">
+        <h2>Swaad</h2>
+        <p>
+          We serve the best Indian dishes with authentic flavors and premium quality.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Pages</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri : 10 AM - 11 PM</p>
+        <p>Saturday : 11 AM - 12 PM</p>
+      </div>
+
+      <div class="footer-gallery">
+        <img src="/Images/paratha.jpg" alt="food">
+
+          <img src="/Images/images.jpg" alt="food">
+
+          <img src="/Images/Curd-Rice.jpg" alt="food">
+
+          <img src="/Images/shahi paneer.webp" alt="food">
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 | Swaad Restaurant
+    </div>
+
+  </footer>
+
+<script src="/JS/Cart.js"></script>
+</body>
+</html>

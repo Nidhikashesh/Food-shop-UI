@@ -1,0 +1,282 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swaad - Menu</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="/CSS/Menu.css"/>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-left">
+      <span><i class="fa-solid fa-phone"></i> +91 9876543210</span>
+      <span><i class="fa-solid fa-envelope"></i> swaad@gmail.com</span>
+    </div>
+
+    <div class="top-right">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Swaad</div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cart.html">Your Cart</a>
+        <a href="Contact.html">Contact</a>
+      <a href="Checkout.html"><button class="book-btn">Checkout</button></a>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Our Menu</h1>
+    <p>
+      We consider all the drivers of change gives you the components
+      you need to change to create a truly happens.
+    </p>
+  </section>
+
+  <!-- CATEGORY BUTTONS -->
+  <section class="category-section">
+    <button class="category-btn active">All</button>
+    <button class="category-btn">Breakfast</button>
+    <button class="category-btn">Main Dishes</button>
+    <button class="category-btn">Drinks</button>
+    <button class="category-btn">Desserts</button>
+  </section>
+
+  <!-- SEARCH + FILTER -->
+  <section class="search-filter">
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search food..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="filter-box">
+      <button class="filter-btn" id="filterBtn">
+        <i class="fa-solid fa-filter"></i>
+        Filter
+      </button>
+
+      <div class="filter-dropdown" id="filterDropdown">
+        <button data-price="all">All Prices</button>
+        <button data-price="100">Below ₹100</button>
+        <button data-price="200">Below ₹200</button>
+        <button data-price="300">Below ₹300</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MENU CARDS -->
+  <section class="menu-grid" id="menuGrid">
+
+    <!-- CARD -->
+    <div class="card" data-price="99">
+      <div class="card-image">
+        <img src="/Images/images.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹99</h3>
+        <h4>South Indian</h4>
+        <p>Soft idli with sambhar and chutney.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+      
+    </div>
+
+    <div class="card" data-price="250">
+      <div class="card-image">
+        <img src="/Images/paneer2.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹250</h3>
+        <h4>Paneer Masala</h4>
+        <p>Rich and creamy paneer curry.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="180">
+      <div class="card-image">
+        <img src="/Images/fried rice.webp" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹180</h3>
+        <h4>Fried Rice</h4>
+        <p>Veg fried rice with fresh vegetables.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="220">
+      <div class="card-image">
+        <img src="/Images/Cheese Cake.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹220</h3>
+        <h4>Cheese Cake</h4>
+        <p>Soft creamy cheesecake with toppings.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="90">
+      <div class="card-image">
+        <img src="/Images/Mojito.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹90</h3>
+        <h4>Mojito</h4>
+        <p>Refreshing mint lemon mojito.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="140">
+      <div class="card-image">
+        <img src="/Images/coldcoffe.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹140</h3>
+        <h4>Cold Coffee</h4>
+        <p>Chilled creamy cold coffee.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="160">
+      <div class="card-image">
+        <img src="/Images/CheeseBurger.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹160</h3>
+        <h4>Cheese Burger</h4>
+        <p>Loaded burger with cheese & veggies.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+    <div class="card" data-price="120">
+      <div class="card-image">
+        <img src="/Images/Tacos.jpg" alt="">
+      </div>
+      <div class="card-content">
+        <h3>₹120</h3>
+        <h4>Tacos</h4>
+        <p>Crunchy tacos with spicy fillings.</p>
+        <a href="FoodDetails.html"><button class="view-btn">
+          View Details
+        </button></a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-box">
+        <h2>Swaad</h2>
+        <p>
+          In the new era of technology we look towards the future with certainty and pride.
+        </p>
+
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h3>Pages</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Utility Pages</h3>
+        <ul>
+          <li>Start Here</li>
+          <li>Style Guide</li>
+          <li>Password</li>
+          <li>404 Not Found</li>
+          <li>Licenses</li>
+          <li>View More</li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us On Instagram</h3>
+
+        <div class="footer-gallery">
+          <img src="/Images/paratha.jpg" alt="food">
+
+          <img src="/Images/images.jpg" alt="food">
+
+          <img src="/Images/Curd-Rice.jpg" alt="food">
+
+          <img src="/Images/shahi paneer.webp" alt="food">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 All Rights Reserved
+    </div>
+
+  </footer>
+
+  <script src="/JS/Menu.js"></script>
+</body>
+</html>

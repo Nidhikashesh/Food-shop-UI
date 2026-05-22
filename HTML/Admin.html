@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swaad Admin Panel</title>
+
+  <link rel="stylesheet" href="/CSS/Admin.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <h2>Swaad</h2>
+      <span>Admin Panel</span>
+    </div>
+
+    <ul class="menu">
+      <li class="active">
+        <i data-feather="grid"></i>
+        Dashboard
+      </li>
+
+      <li>
+        <i data-feather="users"></i>
+        Recent Orders
+      </li>
+
+      <li>
+        <i data-feather="coffee"></i>
+        Popular Food Items
+      </li>
+
+      <li>
+        <i data-feather="shopping-bag"></i>
+        Manage Food Items
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <!-- Main -->
+
+  <main class="main-content">
+
+    <!-- Topbar -->
+
+    <div class="topbar">
+
+      <div>
+        <h1>Dashboard</h1>
+        <p>Welcome Back Admin 👋</p>
+      </div>
+
+      <div class="admin-profile">
+        <img
+          src="/Images/Swaadlogo.jpg"
+          alt=""
+        />
+      </div>
+
+    </div>
+
+    <!-- Cards -->
+
+    <section class="cards">
+
+      <div class="card glass">
+        <div>
+          <p>Total Orders</p>
+          <h2>1,245</h2>
+        </div>
+
+        <div class="card-icon orange">
+          <i data-feather="shopping-cart"></i>
+        </div>
+      </div>
+
+      <div class="card glass">
+        <div>
+          <p>Total Revenue</p>
+          <h2>₹2,45,000</h2>
+        </div>
+
+        <div class="card-icon green">
+          <i data-feather="dollar-sign"></i>
+        </div>
+      </div>
+
+      <div class="card glass">
+        <div>
+          <p>Popular Items</p>
+          <h2>52</h2>
+        </div>
+
+        <div class="card-icon red">
+          <i data-feather="star"></i>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Dashboard Grid -->
+
+    <section class="dashboard-grid">
+
+      <!-- Popular Items -->
+
+      <div class="popular-section glass">
+
+        <div class="section-header">
+          <h2>Popular Food Items</h2>
+          <button>View All</button>
+        </div>
+
+        <div class="food-list">
+
+          <div class="food-card">
+            <img
+              src="/Images/dal tadka.webp"
+              alt=""
+            />
+
+            <div>
+              <h3>Dal Tadka</h3>
+              <p>₹329</p>
+            </div>
+
+            <span class="badge">Best Seller</span>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="/Images/fried rice.webp"
+              alt=""
+            />
+
+            <div>
+              <h3>Fried Rice</h3>
+              <p>₹499</p>
+            </div>
+
+            <span class="badge">Trending</span>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="/Images/salad.jpg"
+              alt=""
+            />
+
+            <div>
+              <h3>Veg Salad</h3>
+              <p>₹259</p>
+            </div>
+
+            <span class="badge">Healthy</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Recent Orders -->
+
+      <div class="recent-orders glass">
+
+        <div class="section-header">
+          <h2>Recent Orders</h2>
+          <button>View All</button>
+        </div>
+
+        <div class="table-responsive">
+
+          <table>
+
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Rahul</td>
+                <td>Dal Tadka</td>
+                <td>₹329</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+
+              <tr>
+                <td>Anjali</td>
+                <td>Fried Rice</td>
+                <td>₹499</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+
+              <tr>
+                <td>Rohit</td>
+                <td>Veg Salad</td>
+                <td>₹259</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+
+              <tr>
+                <td>Sneha</td>
+                <td>Paneer Tikka</td>
+                <td>₹399</td>
+                <td><span class="status cancelled">Cancelled</span></td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Food CRUD -->
+
+    <section class="crud-section glass">
+
+      <div class="section-header">
+        <h2>Manage Food Items</h2>
+        <button id="addFoodBtn">+ Add Food</button>
+      </div>
+
+      <div class="crud-grid">
+
+        <div class="crud-card">
+
+          <img
+            src="/Images/dal tadka.webp"
+            alt=""
+          />
+
+          <div class="crud-info">
+            <h3>Dal Tadka</h3>
+            <p>₹329</p>
+          </div>
+
+          <div class="crud-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+
+        </div>
+
+        <div class="crud-card">
+
+          <img
+            src="/Images/fried rice.webp"
+            alt=""
+          />
+
+          <div class="crud-info">
+            <h3>Fried Rice</h3>
+            <p>₹499</p>
+          </div>
+
+          <div class="crud-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+
+  <div class="modal" id="modal">
+
+    <div class="modal-content glass">
+
+      <h2>Add Food Item</h2>
+
+      <input type="text" placeholder="Food Name"/>
+      <input type="text" placeholder="Price"/>
+      <input type="text" placeholder="Image URL"/>
+
+      <div class="modal-buttons">
+        <button class="save-btn">Save</button>
+        <button class="close-btn">Close</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/JS/Admin.js"></script>
+
+</body>
+</html>
