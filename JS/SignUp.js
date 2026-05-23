@@ -7,7 +7,7 @@ form.addEventListener("submit", function(e){
   alert("Account Created Successfully!✅ You can Login Now!");
   
   form.reset();
-  window.location.href = "Login.html";
+  window.location.href = "../index.html";
   
 
 });
