@@ -144,6 +144,8 @@ section{
 .hero{
   height:100vh;
   background:url('../Images/foodimg.jpeg') center/cover;
+  background-size:cover;
+  background-position:center;
   position:relative;
   display:flex;
   align-items:center;
